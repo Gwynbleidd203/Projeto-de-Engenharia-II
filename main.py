@@ -18,6 +18,10 @@ lista = [tarefa01, tarefa02, tarefa03]
 def index():
     return render_template('index.html', tarefas=lista)
 
+@app.route('novo')
+def novo():
+    return render_template('novo')
+
 
 if __name__ == '__main__':
 
